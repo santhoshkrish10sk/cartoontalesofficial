@@ -266,7 +266,7 @@
   <div class="section-header">
     <div class="section-tag">🎬 Latest Drops</div>
     <h2 class="section-title" style="color:var(--yellow);">Our <span class="hl" style="-webkit-text-stroke-color:var(--pink);">Animated</span> Shorts</h2>
-    <p class="section-sub">Click any video to watch on YouTube — 19 fun-packed animated shorts waiting for you! 🍿</p>
+    <p class="section-sub">Click any video to watch on YouTube — 21 fun-packed animated shorts waiting for you! 🍿</p>
   </div>
   <div class="videos-grid" id="videosGrid"></div>
   <div style="text-align:center;margin-top:48px;">
@@ -297,8 +297,8 @@
     <p class="section-sub">From silly comedy to epic adventures — there's something for every mood on Cartoon tales official!</p>
   </div>
   <div class="cats-grid">
-    <a href="https://www.youtube.com/playlist?list=PLkSqAa1NHXDmMH9k_odFZSPgR-Q-Ys9b0" target="_blank" class="cat-pill cp1">😂 Comedy Shorts</a>
-    <a href="https://www.youtube.com/playlist?list=PLkSqAa1NHXDmoEx_xxuNGDYJaJwutmIqP" target="_blank" class="cat-pill cp2">🎵 Music Videos</a>
+    <a href="https://www.youtube.com/playlist?list=PLkSqAa1NHXDmoEx_xxuNGDYJaJwutmIqP" target="_blank" class="cat-pill cp1">😂 Comedy Shorts</a>
+    <a href="https://www.youtube.com/playlist?list=PLkSqAa1NHXDmMH9k_odFZSPgR-Q-Ys9b0" target="_blank" class="cat-pill cp2">🎵 Music Videos</a>
   </div>
 </section>
 
@@ -335,11 +335,11 @@
   <div class="contact-card">
     <div style="font-size:3.5rem;margin-bottom:18px;">📧</div>
     <div style="font-family:'Bangers',cursive;font-size:1.1rem;letter-spacing:3px;color:var(--cyan);margin-bottom:14px;">EMAIL US</div>
-    <a href="mailto:tales.contact.official@gmail.com" class="contact-email">tales.contact.official@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#96e2f7faf3e5b8f5f9f8e2f7f5e2b8f9f0f0fff5fff7fad6f1fbf7fffab8f5f9fb" class="contact-email"><span class="__cf_email__" data-cfemail="92e6f3fef7e1bcf1fdfce6f3f1e6bcfdf4f4fbf1fbf3fed2f5fff3fbfebcf1fdff">[email&#160;protected]</span></a>
     <div style="margin:28px 0;height:2px;background:linear-gradient(90deg,transparent,rgba(255,230,0,0.3),transparent);"></div>
     <p style="font-size:0.95rem;color:rgba(255,255,240,0.55);font-weight:700;line-height:1.7;">For collaborations, business enquiries,<br>or just fan mail — drop us a line! 🚀</p>
     <div style="margin-top:28px;">
-      <a href="mailto:tales.contact.official@gmail.com" class="btn btn-primary" style="font-size:1rem;padding:12px 32px;">✉️ Send Us a Message</a>
+      <a href="/cdn-cgi/l/email-protection#7602171a13055815191802171502581910101f151f171a36111b171f1a5815191b" class="btn btn-primary" style="font-size:1rem;padding:12px 32px;">✉️ Send Us a Message</a>
     </div>
   </div>
 </section>
@@ -386,8 +386,10 @@
 </footer>
 <div class="bottom-border"></div>
 
-<script>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const videos = [
+    'z1epLpvpvVQ','ahjKS8c8EpI',
     'zitlzm_aTkc','wy__0ed4UBs','3X4AvrXDVkk','a7V-LzKLVGU',
     'F5XsoKZB6is','Twgnt0cUVlU','OR05SxUm4lw','SsL_sj287Tk',
     'ICNcwfpwoc4','_OQTRLXZuss','KlDdTCnoiDM','x0LvMe4IM8g',
@@ -396,7 +398,6 @@
   ];
 
   function setThumb(img, id) {
-    // Exact same thumbnail URL YouTube uses in its own embed/share previews
     const urls = [
       `https://img.youtube.com/vi/${id}/hqdefault.jpg`,
       `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
@@ -443,7 +444,6 @@
     const img = card.querySelector('img');
     setThumb(img, id);
 
-    // Click on card (not the watch link) opens the short
     card.addEventListener('click', (e) => {
       if (!e.target.closest('.watch-link')) {
         window.open(url, '_blank');
